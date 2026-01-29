@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet Route & Vehicle Tracking Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app-wrapper">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">Fleet Tracker</div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#map" class="nav-link">Map</a>
+        <a href="../track/track.html" class="nav-link">Track Route</a>
+        <a href="../admin/login.html" class="nav-link admin-link" target="_blank"> Admin</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-content">
+        <h1 class="hero-title">Route & Fleet Visualization Module</h1>
+        <p class="hero-subtitle">
+          Real-time tracking and route simulation for logistics fleets
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary" id="btnViewMap">View Live Map</button>
+          <button class="btn btn-secondary" id="btnTrackVehicles">Track Vehicles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="home-stats">
+      <div class="home-stat-item">
+        <div class="home-stat-number">500+</div>
+        <div class="home-stat-label">Active Vehicles</div>
+      </div>
+      <div class="home-stat-item">
+        <div class="home-stat-number">98%</div>
+        <div class="home-stat-label">On-Time Delivery</div>
+      </div>
+      <div class="home-stat-item">
+        <div class="home-stat-number">24/7</div>
+        <div class="home-stat-label">Live Monitoring</div>
+      </div>
+      <div class="home-stat-item">
+        <div class="home-stat-number">50K+</div>
+        <div class="home-stat-label">Routes Optimized</div>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="home-section" id="about">
+      <h2 class="home-section-title">Why Choose Our Platform</h2>
+      <div class="home-benefits">
+        <div class="benefit-card">
+          <div class="benefit-icon"></div>
+          <h3 class="benefit-title">Real-Time Updates</h3>
+          <p class="benefit-text">
+            Track your entire fleet in real-time with instant location updates
+            and status notifications.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"></div>
+          <h3 class="benefit-title">Route Optimization</h3>
+          <p class="benefit-text">
+            AI-powered route planning reduces delivery times and fuel costs by up to 30%.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"></div>
+          <h3 class="benefit-title">Advanced Analytics</h3>
+          <p class="benefit-text">
+            Comprehensive dashboards and reports help you make data-driven decisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="home-section testimonials">
+      <h2 class="home-section-title">What Our Clients Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">
+            This platform revolutionized our logistics operations. We've seen a 40%
+            improvement in delivery efficiency since implementation.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-info">
+              <div class="author-name">Saif jain</div>
+              <div class="author-role">
+                Operations Director, FastShip Logistics
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">
+            The real-time tracking and analytics have given us complete visibility into
+            our fleet. Customer satisfaction has never been higher.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-info">
+              <div class="author-name">Ashutosh gupta</div>
+              <div class="author-role">CEO, Urban Delivery Solutions</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">
+            Easy to use, powerful features, and excellent support. This is exactly what we needed.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-info">
+              <div class="author-name">Aman sharma</div>
+              <div class="author-role">Fleet Manager, Metro Transport Co.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Map Section -->
+<section class="home-section" id="map">
+  <h2 class="home-section-title">Live Route Map</h2>
+  <div class="map-wrapper">
+    <iframe 
+      class="map-iframe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.5!2d85.1376!3d25.5941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29e3b4.0!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1738120000000"
+      width="100%" 
+      height="500" 
+      style="border:0; border-radius:12px;"
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+ <!-- ABOUT SECTION -->
+<section id="about" class="about">
+  <div class="about-content">
+    <h2>About Fleet Tracker</h2>
+    <p class="intro">
+      Fleet Tracker is an intelligent logistics monitoring platform designed to help companies track, manage, and optimize
+      their delivery operations in real time. Whether you manage a small fleet or a large-scale logistics network,
+      Fleet Tracker gives you complete visibility into every vehicle, route, and delivery.
+    </p>
+
+    <div class="about-highlights">
+      <div class="highlight">
+        <h3> Real-Time Visibility</h3>
+        <p>
+          Monitor every vehicle and shipment live on the map. Know where your fleet is at any moment and receive instant
+          status updates — whether a package is in transit, delayed, or delivered.
+        </p>
+      </div>
+      <div class="highlight">
+        <h3> Smart Route Optimization</h3>
+        <p>
+          Fleet Tracker uses intelligent algorithms to suggest the most efficient delivery paths, helping reduce fuel
+          costs, improve delivery time, and optimize driver schedules.
+        </p>
+      </div>
+      <div class="highlight">
+        <h3> Analytics Dashboard</h3>
+        <p>
+          Our Admin Dashboard provides detailed analytics, including vehicle utilization, route performance, and delivery
+          accuracy, empowering your team to make data-driven decisions.
+        </p>
+      </div>
+      <div class="highlight">
+        <h3> Real-Time Alerts</h3>
+        <p>
+          Stay informed with instant alerts on shipment delays, route changes, and potential issues, so you can take
+          proactive measures before they impact your customers.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-divider"></div>
+
+    <div class="about-details">
+      <h3>How Fleet Tracker Works</h3>
+      <p>
+        Each vehicle in your fleet is equipped with a GPS-enabled tracking module that continuously transmits live data to
+        the Fleet Tracker system. This data is processed and visualized through the web dashboard, where managers can view
+        real-time locations, shipment progress, and delivery performance.
+      </p>
+      <p>
+        Drivers can be monitored on their assigned routes, while administrators get full control through a secure
+        authentication system. The Admin Panel includes features for managing shipments, analyzing metrics, and responding
+        to live alerts — ensuring smooth logistics operations from start to finish.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon"></div>
+        <h3>Shipment Tracking</h3>
+        <p>Instantly locate shipments, view current status, and monitor delivery milestones through our interactive tracking dashboard.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon"></div>
+        <h3>Fleet Management</h3>
+        <p>Oversee every vehicle’s route, activity, and performance from a centralized interface designed for simplicity and control.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon"></div>
+        <h3>Delivery Insights</h3>
+        <p>Get deep insights into your logistics performance with delivery times, route delays, and efficiency scores.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon"></div>
+        <h3>Secure Access</h3>
+        <p>Only verified administrators can manage the system, ensuring data safety and operational privacy at all times.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">
+        Logistics Dashboard Demo | Educational Project | 2026
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
