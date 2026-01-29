@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Shipment - Fleet Tracker</title>
+  <link rel="stylesheet" href="track.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo"> Fleet Tracker</div>
+    <div class="nav-links">
+      <a href="../home/index.html" target="_blank">Home</a>
+      <a href="../admin/login.html" target="_blank">Admin</a>
+    </div>
+  </nav>
+
+  <main class="track-container">
+    <!-- Title -->
+    <h1 class="track-title">Track Your Shipment</h1>
+    <p class="track-subtitle">Enter Shipment or Vehicle ID to see live journey</p>
+
+    <!-- Search Card -->
+    <div class="track-card">
+      <div class="track-input-group">
+        <input type="text" id="trackInput" placeholder="Enter Shipment ID e.g. SHP-4521" />
+        <button id="trackBtn">Track Now</button>
+      </div>
+      <p id="trackError" class="error-msg"></p>
+    </div>
+
+    <!-- Shipment Result -->
+    <div id="trackResult" class="track-result">
+      <!-- Journey Card -->
+      <div class="journey-card">
+        <div class="journey-header">
+          <h2 id="shipmentTitle">Shipment SHP-4521 Journey</h2>
+          <span id="vehicleTag" class="vehicle-tag">Vehicle: VEH-001</span>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item completed">
+            <div class="icon"></div>
+            <div class="content">
+              <h4>Package Collected</h4>
+              <p class="time">8:00 AM</p>
+              <p>Shipment picked up from warehouse</p>
+            </div>
+          </div>
+
+          <div class="timeline-item active">
+            <div class="icon"></div>
+            <div class="content">
+              <h4>In Transit</h4>
+              <p class="time">9:30 AM</p>
+              <p>En route to destination</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="icon"></div>
+            <div class="content">
+              <h4>Arrived at Hub</h4>
+              <p class="time">Pending</p>
+              <p>New Delhi, DL</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="icon"></div>
+            <div class="content">
+              <h4>Delivered</h4>
+              <p class="time">2:30 PM</p>
+              <p>Final destination</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Location -->
+      <div class="live-location-card">
+        <h3>Live Location</h3>
+        <div class="map-line">
+          <div class="map-point start"></div>
+          <div class="map-road">
+            <div class="truck"></div>
+          </div>
+          <div class="map-point end"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Fleet Tracker | Live Tracking</p>
+  </footer>
+
+  <script src="track.js"></script>
+</body>
+</html>
